@@ -1,1 +1,1 @@
-MY CV :
+MY CV : https://pepeganger.github.io/rsschool-cv/cv
