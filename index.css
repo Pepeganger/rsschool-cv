@@ -27,12 +27,13 @@ nav{
     justify-content: space-between;
     list-style:none;
     
-}
+}   
 
 .wrapper {
     height: 100vh;
     display: grid;
     place-items: center;
+    transition: 2s;
   }
   
   .typing-demo {
@@ -44,6 +45,7 @@ nav{
     font-family: monospace;
     font-size: 2em;
     cursor: default;
+    user-select: none;
   }
   
   @keyframes typing {
@@ -56,4 +58,20 @@ nav{
     50% {
       border-color: transparent
     }
+  }
+
+
+  nav ul li{
+
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    text-decoration: underline;
+  }
+  
+  .animated:hover{
+    -webkit-text-stroke: 1px #000;
+    color: black;
+
   }
