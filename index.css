@@ -74,6 +74,7 @@ width: 0ch;
 .body{
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -85,6 +86,7 @@ height: 100vh;
 .about{
 width: 100vw;
 height: 100vh;  
+
 }
 
 .abtext{
@@ -96,12 +98,11 @@ height: 100vh;
 }
 
 .abimage {
-  display: flex;
   border: 1px solid #000;
-  width: 15vw;
-  height: 60vh;
-position: absolute;
-top: 120%;
-left: 65%;
+  width: 250px;
+  height: 450px;
+  position: absolute;
+  top: 120%;
+left: 60%;
 }
 
