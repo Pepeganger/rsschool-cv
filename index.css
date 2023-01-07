@@ -1,94 +1,107 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Mukta", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color:beige;
+  font-family: Poppins,sans-serif;
+  
 }
 
-.hero{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(211, 211, 211, 0.699),rgba(211, 211, 211, 0.699));
-    position: absolute;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.wrapper{
+height: 100vh;
+width: 100vw;
+position: absolute;
+
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  place-content: center;
+  padding: 40px 0px;
+  font-size: 0px;
 }
 
-nav{
-    position: absolute;
-    width: 100%;
-    top: 20px;
-    left: auto;
-    padding: 20px 8%;
-    list-style:none;
+.list li{
+  list-style:none;
+  display: inline-block;
+  place-items: center;
+  margin: 0px 50px;
+  
+}
 
-}   
+.list li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  user-select: none;
+  font-size: 14px;
+}
 
-.wrapper {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    transition: 2s;
+.list li a:hover{
+  color: brown;
+  text-decoration: underline;
+}
+
+.animation-wrap{
+  display: grid;
+  height: 80vh;
+  place-items: center;
+}
+
+.animation{
+border-right: 2px solid #000;
+width: 25.7ch;
+animation: typing 2s steps(25), blink 0.5s step-end infinite alternate;
+white-space: nowrap;
+overflow: hidden;
+font-size: 2em;
+font-family: monospace;
+
+}
+
+@keyframes blink{
+  50%{
+    border-color: transparent;
   }
   
-  .typing-demo {
-    width: 19.7ch;
-    animation: typing 2s steps(27), blink 1s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
-    cursor: default;
-    user-select: none;
-    position: absolute;
-    font-size:40px;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-
-
-
-  .animated:hover{
-    -webkit-text-stroke: 1px #000;
-    color: black;
-
-  }
-
-  nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin-left:30px;
-    margin-right:50px;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-
-  }
-
-.menuOne:hover {
- color: grey;
- font-weight: bold;
 }
-.menuTwo:hover {
- color: grey;
- font-weight: bold;
+
+@keyframes typing{
+  from {
+width: 0ch;
+  }
 }
-.menuThree:hover {
- color: grey;
- font-weight: bold;
+
+.body{
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+width: 100vw;
+height: 100vh;
+
+}
+
+.about{
+width: 100vw;
+height: 100vh;  
+}
+
+.abtext{
+ position: absolute;
+ top: 150%;
+ left: 10%;
+ font-size: 17px;
+ border: 1px solid #000;
+}
+
+.abimage {
+  display: flex;
+  border: 1px solid #000;
+  width: 15vw;
+  height: 60vh;
+position: absolute;
+top: 120%;
+left: 65%;
 }
 
